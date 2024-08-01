@@ -33,7 +33,9 @@ cc_test(
     srcs = ["zenoh_handle_test.cc"],
     deps = [
         ":zenoh_handle",
+        ":zenoh_config",
         "//intrinsic/util/testing:gtest_wrapper",
+        "@com_google_absl//absl/log",
     ],
 )
 
